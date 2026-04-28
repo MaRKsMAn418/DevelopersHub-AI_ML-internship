@@ -1,7 +1,4 @@
-# DevelopersHub-AI_Internship_Tasks
-## – Data Analysis & Machine Learning –
-This repository contains three tasks completed as part of my AI/ML Engineering Internship at DevelopersHub Corporation. Each task focuses on different aspects of Data Analysis, Visualization, and Machine Learning Modeling.
-
+# DevelopersHub-AI/ML_Internship_Tasks
 ---
 
 # 🔹 Task 1: Exploring and Visualizing a Dataset
@@ -46,7 +43,7 @@ To Predict the Next Day's Closing Stock Price using Historical Data.
 * Engineered features: Daily Return, Price Range, 5-day MA, 20-day MA, 5-day Volatility
 * Applied chronological train-test split (80/20) — no shuffling to preserve time order
 * Scaled features using `StandardScaler`
-* Trained and compared **Linear Regression** and **Random Forest Regressor**
+* Trained **Random Forest Regressor**
 * Visualised actual vs predicted prices and feature importances
 
 ## 📊 Evaluation Metrics
@@ -56,9 +53,7 @@ To Predict the Next Day's Closing Stock Price using Historical Data.
 * Mean Absolute Percentage Error (MAPE)
 
 ## 📈 Key Findings
-* Random Forest outperformed Linear Regression by capturing non-linear price dynamics
 * `Close`, `MA5`, and `MA20` were the most important features
-* Both models tracked general price trends well but lagged during sharp market movements
 * Stock price volatility limits perfect prediction accuracy
 
 ## 📓 Notebook
@@ -72,7 +67,7 @@ To Predict the Next Day's Closing Stock Price using Historical Data.
 To Build a Chatbot that Answers General Health-Related Questions using Prompt Engineering and a Free LLM.
 
 ## 🛠️ Tools Used
-* `llama-3.3-70b-versatile` model via **Groq API** (free, no credit card required)
+* `llama-3.3-70b-versatile` model via **Groq API**
 
 ## ⚙️ Work Performed
 * Configured Groq API with a free API key
@@ -97,39 +92,6 @@ To Build a Chatbot that Answers General Health-Related Questions using Prompt En
 
 ---
 
-# 🔹 Overall Learning
-Through these tasks, I gained hands-on experience in:
-* Data Preprocessing and Feature Engineering
-* Exploratory Data Analysis (EDA)
-* Regression Modeling Techniques
-* Model Evaluation using appropriate metrics
-* Data Visualization for better insights
-* Prompt Engineering and LLM API Integration
-* Safety filtering in conversational AI systems
-
----
-
-## ⚙️ Setup Instructions
-
-### Task 1
-```bash
-pip install pandas seaborn matplotlib
-```
-
-### Task 2
-```bash
-pip install yfinance scikit-learn pandas matplotlib
-```
-
-### Task 4
-```bash
-pip install groq
-```
-Get a free Groq API key at https://console.groq.com → API Keys → Create API Key.
-No credit card required. Paste the key into cell 2 of the notebook.
-
----
-
 ## 📁 Repository Structure
 ```
 ├── Task1.ipynb
@@ -142,4 +104,3 @@ No credit card required. Paste the key into cell 2 of the notebook.
 
 # 👤 Author – Hamza
 AI/ML Engineering Intern – DevelopersHub Corporation
-This repository contains my hands-on implementation of AI/ML concepts learned during the internship, including Data Analysis, Visualization, Regression Modeling, and LLM-based Chatbot Development.
