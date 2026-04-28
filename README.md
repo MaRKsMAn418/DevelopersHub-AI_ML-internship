@@ -56,14 +56,14 @@ Completed tasks for the DevelopersHub Corporation AI/ML Engineering Internship.
 
 ## Task 4 – General Health Query Chatbot
 
-**Objective:** Build a chatbot that answers general health questions using prompt engineering and a free LLM.
+**Objective:** Build a chatbot that answers general health-related questions using prompt engineering and a free LLM.
 
-**Model:** `mistralai/Mistral-7B-Instruct-v0.1` via Hugging Face Inference API
+**Model:** `llama-3.3-70b-versatile` via Groq API (free, no credit card required)
 
 **Notebook:** `task4_health_chatbot.ipynb`
 
 **Key steps:**
-- Configured Hugging Face Inference API with a free token
+- Configured Groq API with a free API key
 - Designed a system prompt restricting the model to general health queries only
 - Implemented a regex-based safety filter to block harmful queries before API calls
 - Tested with example queries from the task brief plus edge cases
@@ -72,7 +72,7 @@ Completed tasks for the DevelopersHub Corporation AI/ML Engineering Internship.
 **Key results:**
 - Chatbot provides clear, friendly, non-diagnostic health information
 - Safety filter correctly blocks overdose, self-harm, and prescription-related queries
-- Cold-start timeout handling included for free-tier model loading delays
+- LLaMA 3.3 70B on Groq delivers fast, high-quality responses completely free
 
 ---
 
@@ -90,9 +90,10 @@ pip install yfinance scikit-learn pandas matplotlib
 
 ### Task 4
 ```bash
-pip install requests
+pip install groq
 ```
-Get a free Hugging Face API token at https://huggingface.co/settings/tokens and paste it into the notebook.
+Get a free Groq API key at https://console.groq.com → API Keys → Create API Key.  
+No credit card required. Paste the key into cell 2 of the notebook.
 
 ---
 
