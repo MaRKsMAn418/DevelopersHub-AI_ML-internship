@@ -1,7 +1,5 @@
 # DevelopersHub AI/ML Engineering Internship Tasks
 
-Completed tasks for the DevelopersHub Corporation AI/ML Engineering Internship.
-
 ---
 
 ## Task 1 – Exploring and Visualising the Iris Dataset
@@ -10,7 +8,7 @@ Completed tasks for the DevelopersHub Corporation AI/ML Engineering Internship.
 
 **Dataset:** Iris Dataset (loaded via `seaborn`)
 
-**Notebook:** `task1_iris_eda.ipynb`
+**Notebook:** `Task1.ipynb`
 
 **Key steps:**
 - Loaded dataset with pandas; inspected shape, dtypes, and descriptive statistics
@@ -34,9 +32,9 @@ Completed tasks for the DevelopersHub Corporation AI/ML Engineering Internship.
 
 **Dataset:** Apple (AAPL) historical data fetched via `yfinance` (2020–2024)
 
-**Models:** Linear Regression and Random Forest Regressor
+**Models:** Random Forest Regressor
 
-**Notebook:** `task2_stock_prediction.ipynb`
+**Notebook:** `Task2.ipynb`
 
 **Key steps:**
 - Fetched 5 years of OHLCV data using the `yfinance` API
@@ -48,9 +46,7 @@ Completed tasks for the DevelopersHub Corporation AI/ML Engineering Internship.
 - Visualised actual vs predicted closing prices and feature importances
 
 **Key findings:**
-- Random Forest outperforms Linear Regression by capturing non-linear price dynamics
 - `Close`, `MA5`, and `MA20` are consistently the most important features
-- Both models track general price trends well but may lag during sharp market movements
 
 ---
 
@@ -60,7 +56,7 @@ Completed tasks for the DevelopersHub Corporation AI/ML Engineering Internship.
 
 **Model:** `llama-3.3-70b-versatile` via Groq API (free, no credit card required)
 
-**Notebook:** `task4_health_chatbot.ipynb`
+**Notebook:** `Task4.ipynb`
 
 **Key steps:**
 - Configured Groq API with a free API key
@@ -92,16 +88,14 @@ pip install yfinance scikit-learn pandas matplotlib
 ```bash
 pip install groq
 ```
-Get a free Groq API key at https://console.groq.com → API Keys → Create API Key.  
-No credit card required. Paste the key into cell 2 of the notebook.
 
 ---
 
 ## Repository Structure
 
 ```
-├── task1_iris_eda.ipynb
-├── task2_stock_prediction.ipynb
-├── task4_health_chatbot.ipynb
+├── Task1.ipynb.ipynb
+├── Task2.ipynb.ipynb
+├── Task4.ipynb.ipynb
 └── README.md
 ```
